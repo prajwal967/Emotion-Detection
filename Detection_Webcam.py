@@ -48,6 +48,7 @@ while True:
         
         img_arr = np.array(resize_img)
         img_arr = img_arr.astype('float32')
+	img_arr = img_arr.reshape(1,48,48,1)
         prediction = m.predict(img_arr)
 
 
